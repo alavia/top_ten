@@ -7,4 +7,7 @@ class TopTen::Top
     attr_accessor :name, :description
     @@all = []
 
+    def self.all
+        @@all
+    end
 end
