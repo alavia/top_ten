@@ -1,10 +1,11 @@
 class TopTen::Scraper
 
-    def scrape_country
+    def self.scrape_country
         doc = Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
+        binding.pry
 
         countries = doc.css("marketing-article").text
-        binding.pry
+
         country_1 = self.new
         country_1.name = "Chile"
         country_1.description = "Chile is a sinewy sliver of a nation, isolated from the rest of South America (and indeed the world) by the soaring Andes to the east, the vast Pacific Ocean to the west, the bone-dry Atacama Desert up north and the impenetrable wilds of Patagonia down south. From its disparate extremes to the ever-trendier capital of Santiago at its heart, the country’s citizens will unite in 2018 to mark 200 years of independence. Thanks to new non-stop flights from both London and Melbourne, it’s never been easier to catch a plane, raise a glass of pisco sour and toast the celebration."
