@@ -7,9 +7,11 @@ class TopTen::CLI
     end
 
     def list_countries
-       puts "Lonely Planet's Top 10 Countries to Visit in 2018:"
-       @list = TopTen::Top.list
-       TopTen::Scraper.scrape_country
+        puts "Lonely Planet's Top 10 Countries to Visit in 2018:"
+        @country_list = TopTen::Scraper.scrape_country
+        @country_list.each.with_index(1) do |country, i|
+            puts "#{i}. #{country.name}"
+        end
     end
 
     def menu
@@ -18,8 +20,8 @@ class TopTen::CLI
             puts "Enter the number of the country you would like to learn more about or type list to see the list again or type exit:"
             input = gets.strip.downcase
 
-            if input.to_i > 0
-                puts @list[input.to_i - 1]
+            if input.to_i.between?(1,10)
+                puts @country_list[input.to_i - 1]
             elsif input == "list"
                 list_countries
             else

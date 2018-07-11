@@ -1,10 +1,11 @@
 class TopTen::Scraper
+    attr_accessor :name, :description
 
     def self.scrape_country
-        doc = Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
-        binding.pry
+        # doc = Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
+        # binding.pry
 
-        countries = doc.css("marketing-article").text
+        # countries = doc.css("marketing-article").text
 
         country_1 = self.new
         country_1.name = "Chile"
