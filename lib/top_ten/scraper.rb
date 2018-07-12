@@ -19,6 +19,6 @@ class TopTen::Scraper
         @@all << country_2
 
         [country_1, country_2]
-        binding.pry
+        # binding.pry
     end
 end

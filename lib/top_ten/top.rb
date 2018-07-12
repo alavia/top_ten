@@ -17,13 +17,4 @@ class TopTen::Top
         @@all
     end
 
-    def self.list
-        puts "1. Chile"
-        puts "2. South Korea"
-        puts "3. Portugal"
-        puts "4. Djibouti"
-        puts "5. New Zealand"
-        # binding.pry
-    end
-
 end
