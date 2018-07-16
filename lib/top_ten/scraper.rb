@@ -4,14 +4,15 @@ class TopTen::Scraper
     def self.scrape_country
         @@all = []
         doc = Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
-        countries = doc.css("marketing-article")
+        countries = doc.css(".marketing-article")
         countries.collect do |country|
-            new_country = self.new
-            new_country.name = country.css("h1").text.strip
-            new_country.description = country.css(".marketing-article__content").text.strip
-            new_country
+            new_country = TopTen::Top.new
+            new_country.name = country.css("h1").text
+            new_country.description = country.css(".marketing-article__content").text
+
+            @@all << new_country
         end
-        # binding.pry
+        binding.pry
     end
 end
 
@@ -31,20 +32,21 @@ end
     #     # binding.pry
     # end
 
-    # def self.get_page
-    #     doc = Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
-    # end
+#     def self.get_page
+#         Nokogiri::HTML(open("https://www.lonelyplanet.com/best-in-travel/countries"))
+#     end
 
-    # def self.get_countries
-    #     get_page.css(".marketing-article")
-    # end
+#     def self.get_countries
+#         self.get_page.css(".marketing-article")
+#     end
 
-    # def self.make_countries
-    #     get_countries.each do |article|
-    #         country = self.new
-    #         country.name = article.css("h1")
-    #         country.description = article.css(".marketing-article__content")
-    #     end
-    #         # binding.pry
+#     def self.make_countries
+#         self.get_countries.each do |article|
+#             country = Top.new
+#             country.name = article.css("h1").text
+#             country.description = article.css(".marketing-article__content").text
+#         end
+#             # binding.pry
 
-    # end
+#     end
+# end
