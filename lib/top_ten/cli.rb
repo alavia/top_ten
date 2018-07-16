@@ -25,7 +25,7 @@ class TopTen::CLI
             input = gets.strip.downcase
 
             if input.to_i.between?(1,10)
-                the_country = @country_list[input.to_i - 1]
+                the_country = @countries[input.to_i - 1]
                 puts "#{the_country.name} - #{the_country.description}"
             elsif input == "list"
                 list_countries
