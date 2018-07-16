@@ -6,11 +6,15 @@ class TopTen::CLI
         goodbye
     end
 
+    def countries
+        @countries = TopTen::Top.all
+    end
+
     def list_countries
         puts "Lonely Planet's Top 10 Countries to Visit in 2018:"
         @country_list = TopTen::Scraper.scrape_country
-        @country_list.each.with_index(1) do |country, i|
-            puts "#{i}. #{country.name}"
+        countries.each do |country|
+            puts "#{country.name}"
         end
     end
 

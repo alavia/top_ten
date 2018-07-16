@@ -1,5 +1,5 @@
 class TopTen::Scraper
-    attr_accessor :name, :description
+    # attr_accessor :name, :description
 
     def self.scrape_country
         @@all = []
@@ -10,9 +10,10 @@ class TopTen::Scraper
             new_country.name = country.css("h1").text
             new_country.description = country.css(".marketing-article__content").text
 
-            @@all << new_country
+            new_country.save
+            # @@all << new_country
         end
-        binding.pry
+        # binding.pry
     end
 end
 
