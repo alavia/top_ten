@@ -19,7 +19,7 @@ class TopTen::CLI
     end
 
     def list_countries
-        puts "Here's Lonely Planet's Top 10 Countries to Visit in 2018:"
+        puts "Here are Lonely Planet's Top 10 Countries to Visit in 2018:"
         countries.each do |country|
             puts "#{country.name}"
         end
