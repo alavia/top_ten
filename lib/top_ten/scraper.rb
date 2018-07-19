@@ -8,10 +8,9 @@ class TopTen::Scraper
         countries.collect do |country|
             new_country = TopTen::Top.new
             new_country.name = country.css("h1").text
-            new_country.description = country.css(".marketing-article__content").text
+            new_country.description = country.css(".marketing-article__content").text.strip
 
             new_country.save
-            # @@all << new_country
         end
         # binding.pry
     end

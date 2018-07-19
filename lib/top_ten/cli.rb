@@ -1,9 +1,16 @@
 class TopTen::CLI
 
     def call
+        welcome
         list_countries
         menu
         goodbye
+    end
+
+
+    def welcome
+        puts "Welcome!"
+        puts "Here you will find the top ten countries you need to visit in 2018, according to Lonely Planet."
     end
 
     def countries
