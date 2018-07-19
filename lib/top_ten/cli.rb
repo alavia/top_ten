@@ -2,15 +2,16 @@ class TopTen::CLI
 
     def call
         welcome
+        TopTen::Scraper.scrape_country
         list_countries
         menu
         goodbye
     end
 
-
     def welcome
-        puts "Welcome!"
-        puts "Here you will find the top ten countries you need to visit in 2018, according to Lonely Planet."
+        puts "Welcome, traveler!"
+        puts "Not sure about where you should go in 2018?"
+        puts "This should help!"
     end
 
     def countries
@@ -18,8 +19,7 @@ class TopTen::CLI
     end
 
     def list_countries
-        puts "Lonely Planet's Top 10 Countries to Visit in 2018:"
-        @country_list = TopTen::Scraper.scrape_country
+        puts "Here's Lonely Planet's Top 10 Countries to Visit in 2018:"
         countries.each do |country|
             puts "#{country.name}"
         end
