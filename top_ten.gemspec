@@ -15,12 +15,12 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.files         = ["lib/top_ten/top.rb", "lib/top_ten/scraper.rb", "lib/top_ten/cli.rb", "lib/top_ten/version.rb", "lib/top_ten.rb"]
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
-  spec.bindir        = "bin"
+  # spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+  #   f.match(%r{^(test|spec|features)/})
+  # end
+  # spec.bindir        = "bin"
   spec.executables   = ["top_ten"]
-  spec.require_paths = ["lib"]
+  # spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
