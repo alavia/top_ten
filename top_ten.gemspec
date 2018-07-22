@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alavia"]
   spec.email         = ["alavia.yahya@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Scrapes Lonely Planet website to display top 10 countries to visit in 2018 with details about countries."
+  spec.description   = "This gem will teach you about Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018."
+  spec.homepage      = "https://github.com/alavia/top_ten"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
