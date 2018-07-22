@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    top_ten (0.1.3)
+    top_ten (0.1.4)
       nokogiri
       require_all (~> 1.5.0)
 
