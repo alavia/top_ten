@@ -10,6 +10,5 @@ class TopTen::Scraper
 
             new_country.save
         end
-        # binding.pry
     end
 end
