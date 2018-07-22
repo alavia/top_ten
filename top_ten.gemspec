@@ -13,22 +13,11 @@ Gem::Specification.new do |spec|
   spec.description   = "This gem will teach you about Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018."
   spec.homepage      = "https://github.com/alavia/top_ten"
   spec.license       = "MIT"
-  spec.files         = ["lib/top_ten/top.rb", "lib/top_ten/scraper.rb", "lib/top_ten/cli.rb", "lib/top_ten/version.rb", "lib/top_ten.rb", "bin/top_ten"]
+  spec.files         = ["lib/top_ten/top.rb", "lib/top_ten/scraper.rb", "lib/top_ten/cli.rb", "lib/top_ten/version.rb", "lib/top_ten.rb"]
 
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  # if spec.respond_to?(:metadata)
-  #   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  # else
-  #   raise "RubyGems 2.0 or newer is required to protect against " \
-  #     "public gem pushes."
-  # end
-
-
-  # spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-  #   f.match(%r{^(test|spec|features)/})
-  # end
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
   spec.bindir        = "bin"
   spec.executables   = ["top_ten"]
   spec.require_paths = ["lib"]
