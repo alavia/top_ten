@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry", "~> 0.11.3"
 
+
+  spec.add_dependency "require_all", "~> 1.5.0"
   spec.add_dependency "nokogiri"
 
 
