@@ -1,6 +1,5 @@
 #all requirements/acting as environment
 
-require 'require_all'
 require 'pry'
 require 'Nokogiri'
 require 'open-uri'
