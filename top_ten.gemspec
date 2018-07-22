@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = "This gem will teach you about Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018."
   spec.homepage      = "https://github.com/alavia/top_ten"
   spec.license       = "MIT"
-  spec.files         = ["lib/top_ten/top.rb", "lib/top_ten/scraper.rb", "lib/top_ten/cli.rb", "lib/top_ten/version.rb", "lib/top_ten.rb"]
+  spec.files         = ["lib/top_ten/top.rb", "lib/top_ten/scraper.rb", "lib/top_ten/cli.rb", "lib/top_ten/version.rb", "lib/top_ten.rb", "bin/top_ten"]
 
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   # spec.files         = `git ls-files -z`.split("\x0").reject do |f|
   #   f.match(%r{^(test|spec|features)/})
   # end
-  # spec.bindir        = "bin"
+  spec.bindir        = "bin"
   spec.executables   = ["top_ten"]
   spec.require_paths = ["lib"]
 
