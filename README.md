@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Type $ top_ten after installing the gem to run the application.
+Type ```$ top_ten``` after installing the gem to run the application.
 
 ## Development
 
