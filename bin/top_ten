@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './lib/top_ten.rb'
+require './lib/top_ten'
 
 TopTen::CLI.new.call
