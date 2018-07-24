@@ -1,5 +1,7 @@
 # TopTen
 
+[![Gem Version](https://badge.fury.io/rb/top_ten.svg)](https://badge.fury.io/rb/top_ten)
+
 Welcome! This gem will teach you about Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018.
 
 ## Installation
