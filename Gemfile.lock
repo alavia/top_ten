@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    top_ten (0.1.4)
+    top_ten (0.1.6)
       nokogiri
-      require_all (~> 1.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -17,7 +16,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rake (10.4.2)
-    require_all (1.5.0)
 
 PLATFORMS
   ruby
