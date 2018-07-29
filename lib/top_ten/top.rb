@@ -1,5 +1,5 @@
 class TopTen::Top
-    attr_accessor :name, :description
+    attr_accessor :name, :rank, :description
     @@all = []
 
     def self.all
@@ -9,5 +9,4 @@ class TopTen::Top
     def save
         @@all << self
     end
-
 end

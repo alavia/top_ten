@@ -21,7 +21,7 @@ class TopTen::CLI
     def list_countries
         puts "Here are Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018:"
         countries.each do |country|
-            puts "#{country.name}"
+            puts "#{country.rank}. #{country.name}"
         end
     end
 
@@ -30,11 +30,11 @@ class TopTen::CLI
         puts "You can also enter 'list' to view the list again or 'exit' to exit the program."
         input = gets.strip.downcase
 
-        if input != "exit"
+        unless input.include?("exit")
             if input.to_i.between?(1,10)
                 the_country = @countries[input.to_i - 1]
-                puts "#{the_country.name} - #{the_country.description}"
-            elsif input == "list"
+                puts "\n\e[1m#{the_country.name}\e[22m\n#{the_country.description}\n\n"
+            elsif input.include?("list")
                 list_countries
             else
                 puts "Not sure what you mean."
