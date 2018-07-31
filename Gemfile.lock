@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    top_ten (0.1.8)
+    top_ten (0.1.9)
       nokogiri
 
 GEM
