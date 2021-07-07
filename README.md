@@ -1,5 +1,7 @@
 # TopTen
 
+[![Gem Version](https://badge.fury.io/rb/top_ten.svg)](https://badge.fury.io/rb/top_ten)
+
 Welcome! This gem will teach you about Lonely Planet's Best in Travel Top 10 Countries to Visit in 2018.
 
 ## Installation
@@ -30,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/alavia/top_ten. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/alavia/top_ten. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -38,4 +40,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the TopTen project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/top_ten/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the TopTen project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/alavia/top_ten/blob/master/CODE_OF_CONDUCT.md).
